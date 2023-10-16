@@ -90,7 +90,7 @@
             <configuration>
                 <archive>
                     <manifest>
-                        <mainClass>com.concept.JavaSentMail.App</mainClass>
+                        <mainClass>App</mainClass>
                     </manifest>
                 </archive>
             </configuration>
