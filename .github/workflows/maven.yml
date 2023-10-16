@@ -31,6 +31,8 @@ jobs:
       run: mvn clean install
       
     - name: Run Java application
-      run: java -jar src/javamail4.jar
+      run: |
+        javac App.java
+        java App
 
  
