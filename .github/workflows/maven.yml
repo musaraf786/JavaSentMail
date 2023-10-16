@@ -32,7 +32,7 @@ jobs:
       
     - name: Run Java application
       run: |
-        javac App.java
-        java App
+         javac src/main/java/com/concept/JavaSentMail/App.java
+         java -cp src/main/java com.concept.JavaSentMail.App
 
  
