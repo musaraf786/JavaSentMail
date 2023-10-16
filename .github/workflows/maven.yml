@@ -30,9 +30,13 @@ jobs:
     - name: Build with Maven
       run: mvn clean install
       
-    - name: Run Java application
+    - name: Build Java Classes
       run: |
-         javac src/main/java/com/concept/JavaSentMail/App.java
-         java -cp src/main/java com.concept.JavaSentMail.App
+        javac src/main/java/com/concept/JavaSentMail/email/GEmailSender.java
+        javac src/main/java/com/concept/JavaSentMail/App.java
+
+    - name: Run Java Application
+      run: |
+        java -cp src/main/java com.concept.JavaSentMail.App
 
  
